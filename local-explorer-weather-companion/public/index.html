@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Explorer & Weather Companion</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Local Explorer & Weather Companion</h1>
+  </header>
+
+  <main class="container">
+    <div class="search-section">
+      <h2>Explore Local Places with Weather Information</h2>
+      <div class="search-box">
+        <input type="text" id="locationInput" placeholder="Enter a city or address" required>
+        <button id="searchButton">Search</button>
+      </div>
+    </div>
+
+    <div id="resultsContainer" class="results-container hidden">
+      <h2 id="resultsTitle">Results</h2>
+      
+      <div id="weatherInfo" class="weather-card hidden">
+        <h3>Current Weather</h3>
+        <div class="weather-content"></div>
+      </div>
+
+      <div id="placesList" class="places-list">
+        <h3>Nearby Places</h3>
+        <div class="places-container"></div>
+      </div>
+    </div>
+
+    <div id="errorContainer" class="error-message hidden"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Local Explorer & Weather Companion</p>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
